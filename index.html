@@ -7,31 +7,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Personalização Automobilística Avançada</h1>
-    <p>A Auto Kaiser oferece personalização automotiva de ponta, combinando consultoria especializada, tecnologia em realidade aumentada, IA e impressão 3D, além de apps e workshops exclusivos, permitindo que cada cliente visualize, ajuste e instale componentes de forma precisa para criar um carro único, seguro e de alta performance.</p>
-    <div class="actions">
-      <button onclick="openGallery()">Gerar Modelo 3D</button>
-      <button onclick="openCustomization()">Fazer Encomenda</button>
+  <header>
+    <div class="header-content">
+      <h1>Personalização Automobilística Avançada</h1>
+      <p>Contato: (42) 9 9125-8280 | autokaiser@gmail.com</p>
     </div>
-    <div class="gallery" style="display: none;">
-      <img src="carro1.jpg" alt="Carro 1">
-      <img src="carro2.jpg" alt="Carro 2">
-      <img src="carro3.jpg" alt="Carro 3">
-      <img src="carro4.jpg" alt="Carro 4">
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="text-column">
+          <p>A Auto Kaiser oferece personalização automotiva de ponta, combinando consultoria especializada, tecnologia em realidade aumentada, IA e impressão 3D, além de apps e workshops exclusivos, permitindo que cada cliente visualize, ajuste e instale componentes de forma precisa para criar um carro único, seguro e de alta performance.</p>
+        </div>
+        <div class="image-column">
+          <img src="impala.jpg" alt="Impala">
+          <img src="mustang.jpg" alt="Mustang">
+        </div>
+      </div>
+      <div class="actions">
+        <button onclick="openGallery()">Gerar Modelo 3D</button>
+        <button onclick="openCustomization()">Fazer Encomenda</button>
+      </div>
+      <div class="gallery" style="display: none;">
+        <img src="carro1.jpg" alt="Carro 1">
+        <img src="carro2.jpg" alt="Carro 2">
+        <img src="carro3.jpg" alt="Carro 3">
+        <img src="carro4.jpg" alt="Carro 4">
+      </div>
+      <div class="customization-options" style="display: none;">
+        <h2>Opções de Personalização</h2>
+        <div class="customization-row">
+          <div class="customization-item">
+            <label><input type="checkbox"> Peças do Impala</label>
+          </div>
+          <div class="customization-item">
+            <label><input type="checkbox"> Peças de outros carros</label>
+          </div>
+        </div>
+        <div class="customization-row">
+          <div class="customization-item">
+            <label><input type="checkbox"> Opção 3</label>
+          </div>
+          <div class="customization-item">
+            <label><input type="checkbox"> Opção 4</label>
+          </div>
+        </div>
+        <h2>Pedido Personalizado</h2>
+        <textarea placeholder="Deixe seu comentário e pedido personalizado aqui..."></textarea>
+      </div>
     </div>
-    <div class="customization-options" style="display: none;">
-      <h2>Opções de Personalização</h2>
-      <ul>
-        <li>Peças do Impala</li>
-        <li>Peças de outros carros</li>
-        <li>Opção 3</li>
-        <li>Opção 4</li>
-      </ul>
-      <h2>Pedido Personalizado</h2>
-      <textarea placeholder="Deixe seu comentário e pedido personalizado aqui..."></textarea>
-    </div>
-  </div>
+  </main>
+
+  <footer>
+    <p>Contato: (42) 9 9125-8280 | autokaiser@gmail.com</p>
+  </footer>
 
   <script>
     function openGallery() {
