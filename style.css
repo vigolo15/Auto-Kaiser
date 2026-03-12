@@ -1,72 +1,50 @@
-/* CSS */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
-}
+
 header {
-  background-color: #c62828;
-  padding: 20px 0;
+    background-color: #800000; /* Cor vinho */
+    color: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.menu {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 36px; /* Aumenta o tamanho dos ":" */
+    line-height: 1; /* Ajusta o espaçamento */
 }
-.header-content h1 {
-  font-size: 36px;
-  margin: 0;
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #800000; /* Cor vinho */
+    color: white; /* Texto na cor branca para contraste */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
 }
-.header-content p {
-  font-size: 16px;
-  margin: 0;
+
+.sidebar.active {
+    display: block;
 }
-.content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-.text-column {
-  flex: 1;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-right: 40px;
-}
-.image-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.image-column img {
-  width: 100%;
-  height: auto;
-}
-.actions {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-.actions button {
-  background-color: #c62828;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+
+footer {
+    background-color: #800000; /* Cor vinho */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
